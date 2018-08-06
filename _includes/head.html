@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:url" content="{{ page.url | prepend: site.subdirectory | prepend: site.baseurl }}" />
   <meta property="og:type" content="{% if page.type %}{{ page.type }}{% else %}{{ site.type }}{% endif %}"/>
   <meta property="og:title" content="{% if page.facebook_title %}{{ page.facebook_title | escape }}{% elsif page.seo_title %}{{ page.seo_title | escape }}{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}"/>
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
@@ -12,7 +12,7 @@
   <title>{% if page.seo_title %}{{ page.seo_title | escape }}{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.seo_description %}{{ page.seo_description | strip_html | strip_newlines }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}"/>
 
-  <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"/>
+  <link rel="canonical" href="{{ page.url | prepend: site.subdirectory | prepend: site.baseurl }}"/>
   {% capture _SASS %}
     {% include inline.scss %}
     {% if layout.scss %}{{ layout.scss | prepend: "@import 'layouts/" | append: "';"}}{% endif %}

@@ -8,8 +8,8 @@
 # Site settings
 title: "Site Title"
 description: "Site Description"
-baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site
+subdirectory: ''
+baseurl: ''
 facebook_image: ''
 type: 'article'
 
@@ -39,6 +39,6 @@ plugins:
 defaults:
   -
     scope:
-      path: "" # empty string for all files
+      path: '' # empty string for all files
     values:
-      layout: "page"
+      layout: 'page'
