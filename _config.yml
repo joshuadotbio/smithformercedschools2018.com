@@ -8,7 +8,7 @@
 # Site settings
 title: "Site Title"
 description: "Site Description"
-subdirectory: ''
+url: ''
 baseurl: ''
 facebook_image: ''
 type: 'article'
