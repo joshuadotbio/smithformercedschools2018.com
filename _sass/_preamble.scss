@@ -8,19 +8,25 @@ $susy: (
 );
 
 /* media queries */
-@mixin iPhone { // portrait less 15px
+@mixin iPhone {
+  // portrait less 15px
   @media (min-width: 350px) { @content; }
 }
-@mixin iPad { // portrait less 15px
+@mixin iPad {
+  // portrait less 15px
   @media (min-width: 753px) { @content; }
 }
-@mixin iPadPro { // portrait less 15px
+@mixin iPadPro {
+  // portrait less 15px
   @media (min-width: 1009px) { @content; }
 }
-@mixin MacBookAir { // landscape less 15px
+@mixin MacBookAir {
+  // landscape less 15px
   @media (min-width: 1425px) { @content; }
 }
-@mixin MacBookPro { // landscape less 15px
+@mixin MacBookPro {
+  // landscape less 15px
+  // default settings match MacBook Air
   @media (min-width: 1665px) { @content; }
 }
 
