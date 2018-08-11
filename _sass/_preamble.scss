@@ -8,23 +8,20 @@ $susy: (
 );
 
 /* media queries */
-@mixin phone-only {
-  @media (max-width: 599px) { @content; }
-}
-@mixin iphone6 {
+@mixin iPhone { // portrait less 15px
   @media (min-width: 350px) { @content; }
 }
-@mixin tablet-portrait {
-  @media (min-width: 600px) { @content; }
+@mixin iPad { // portrait less 15px
+  @media (min-width: 753px) { @content; }
 }
-@mixin tablet-landscape {
-  @media (min-width: 900px) { @content; }
+@mixin iPadPro { // portrait less 15px
+  @media (min-width: 1009px) { @content; }
 }
-@mixin desktop {
-  @media (min-width: 1200px) { @content; }
+@mixin MacBookAir { // landscape less 15px
+  @media (min-width: 1425px) { @content; }
 }
-@mixin big-desktop {
-  @media (min-width: 1800px) { @content; }
+@mixin MacBookPro { // landscape less 15px
+  @media (min-width: 1665px) { @content; }
 }
 
 /* colors */
