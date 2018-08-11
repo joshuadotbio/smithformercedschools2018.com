@@ -24,6 +24,7 @@ exclude:
   - 'bower_components'
   - 'bower.json'
   - 'package.json'
+  - 'package-lock.json'
   - 'gulpfile.js'
   - 'Gemfile'
   - 'Gemfile.lock'
