@@ -79,3 +79,8 @@ small {
   display: flex;
   width: span(12 of 12);
 }
+
+.text {
+  @extend %text-column;
+  padding: $text-padding;
+}
