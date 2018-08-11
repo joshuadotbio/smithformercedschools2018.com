@@ -60,3 +60,8 @@ a {
 small {
   font-family: $sans-serif;
 }
+
+.block {
+  display: flex;
+  width: span(12 of 12);
+}
