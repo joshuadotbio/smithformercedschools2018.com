@@ -1,3 +1,32 @@
+/* grid */
+
+$susy: (
+  'columns': susy-repeat(12),
+  'gutters': 0,
+  'spread': 'narrow',
+  'container-spread': 'narrow',
+);
+
+/* media queries */
+@mixin phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin iphone6 {
+  @media (min-width: 350px) { @content; }
+}
+@mixin tablet-portrait {
+  @media (min-width: 600px) { @content; }
+}
+@mixin tablet-landscape {
+  @media (min-width: 900px) { @content; }
+}
+@mixin desktop {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin big-desktop {
+  @media (min-width: 1800px) { @content; }
+}
+
 /* colors */
 /* https://github.com/mrmrs/colors/blob/master/css/colors.css */
 
@@ -133,26 +162,6 @@ $black: #111111;
 %shadow-5 {
   -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-}
-
-/* media queries */
-@mixin phone-only {
-  @media (max-width: 599px) { @content; }
-}
-@mixin iphone6 {
-  @media (min-width: 350px) { @content; }
-}
-@mixin tablet-portrait {
-  @media (min-width: 600px) { @content; }
-}
-@mixin tablet-landscape {
-  @media (min-width: 900px) { @content; }
-}
-@mixin desktop {
-  @media (min-width: 1200px) { @content; }
-}
-@mixin big-desktop {
-  @media (min-width: 1800px) { @content; }
 }
 
 /* lato-300 - latin */
