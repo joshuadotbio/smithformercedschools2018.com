@@ -1,0 +1,19 @@
+{
+  "name": "scaffold",
+  "version": "1.0.0",
+  "description": "A foundation for my jekyll websites.",
+  "main": "index.js",
+  "dependencies": {
+    "susy": "^3.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "keybase://private/joshuagonzales/scaffold"
+  },
+  "author": "Joshua Gonzales",
+  "license": "ISC"
+}
