@@ -14,11 +14,11 @@ body {
   font-size: 100%;
   font-family: "Lato", sans-serif;
 
-  @include iphone6 {
+  @include iPhone {
     font-size: 125%;
   }
 
-  @include tablet-portrait {
+  @include iPad {
     font-size: 150%;
   }
 }
