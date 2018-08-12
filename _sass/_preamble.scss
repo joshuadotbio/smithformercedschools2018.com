@@ -42,15 +42,6 @@ $susy: (
   // portrait height less 16px
   @media (min-height: 1350px) { @content; }
 }
-@mixin MacBookAirHeight {
-  // landscape height less 16px
-  @media (min-height: 974px) { @content; }
-}
-@mixin MacBookProHeight {
-  // landscape height less 16px
-  // default settings match MacBook Air
-  @media (min-height: 1034px) { @content; }
-}
 
 /* colors */
 /* https://github.com/mrmrs/colors/blob/master/css/colors.css */
