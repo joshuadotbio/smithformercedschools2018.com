@@ -8,26 +8,48 @@ $susy: (
 );
 
 /* media queries */
-@mixin iPhone {
-  // portrait less 15px
-  @media (min-width: 350px) { @content; }
+@mixin iPhoneWidth {
+  // portrait width less 16px
+  @media (min-width: 349px) { @content; }
 }
-@mixin iPad {
-  // portrait less 15px
-  @media (min-width: 753px) { @content; }
+@mixin iPadWidth {
+  // portrait width less 16px
+  @media (min-width: 752px) { @content; }
 }
-@mixin iPadPro {
-  // portrait less 15px
-  @media (min-width: 1009px) { @content; }
+@mixin iPadProWidth {
+  // portrait width less 16px
+  @media (min-width: 1008px) { @content; }
 }
-@mixin MacBookAir {
-  // landscape less 15px
-  @media (min-width: 1425px) { @content; }
+@mixin MacBookAirWidth {
+  // landscape width less 16px
+  @media (min-width: 1424px) { @content; }
 }
-@mixin MacBookPro {
-  // landscape less 15px
+@mixin MacBookProWidth {
+  // landscape width less 16px
   // default settings match MacBook Air
-  @media (min-width: 1665px) { @content; }
+  @media (min-width: 1664px) { @content; }
+}
+
+@mixin iPhoneHeight {
+  // portrait height less 16px
+  @media (min-height: 651px) { @content; }
+}
+@mixin iPadHeight {
+  // portrait height less 16px
+  @media (min-height: 1008px) { @content; }
+}
+@mixin iPadProHeight {
+  // portrait height less 16px
+  @media (min-height: 1350px) { @content; }
+}
+@mixin MacBookAirHeight {
+  // landscape height less 16px
+  @media (min-height: 974px) { @content; }
+}
+@mixin MacBookProHeight {
+  // landscape height less 16px
+  // default settings match MacBook Air
+  @media (min-height: 1034px) { @content; }
 }
 
 /* colors */
