@@ -1,0 +1,26 @@
+<script>
+  var a = function(targetID, sourceIDs) {
+    var totalOffsetHeight = 0;
+    for (i = 0; i < sourceIDs.length; i++) {
+      totalOffsetHeight += document.getElementById(
+        sourceIDs[i]).offsetHeight;
+    }
+    document.getElementById(targetID).style.marginTop =
+      totalOffsetHeight + 'px';
+  }
+
+  var b = function(targetIDs, sourceID) {
+    var height = document.getElementById(
+      sourceID).offsetHeight;
+    for (i = 0; i < targetIDs.length; i++) {
+      document.getElementById(targetIDs[i]).style.height =
+        height + 'px';
+    }
+  }
+
+  var c = (function(){
+    //
+  })();
+
+  window.addEventListener('resize',c);
+</script>
