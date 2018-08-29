@@ -16,6 +16,7 @@ $serif: "PT Serif", serif;
 body {
   font-size: 100%;
   font-family: $sans-serif;
+  background-color: $teal;
 
   @include iPhoneWidth {
     font-size: 125%;
@@ -28,9 +29,10 @@ body {
 
 $vertical-rhythm: 2rem;
 $edge-padding: 2rem;
+$padding: $vertical-rhythm $edge-padding;
 $p-line-height: 1.5;
 $h1-line-height: 1.15;
-$text-column-width: 50rem;
+$text-column-width: 45rem;
 
 %text-column {
   max-width: 50rem;
@@ -74,12 +76,19 @@ small {
   font-family: $sans-serif;
 }
 
-.block {
-  padding: $vertical-rhythm 0;
+%centered-column {
+  max-width: $text-column-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.has-dark-background {
+%has-dark-background {
   color: $white;
+
+  p {
+    font-family: $sans-serif;
+    font-weight: 300;
+  }
 
   a {
     color: $white;
@@ -90,21 +99,65 @@ small {
   }
 }
 
-.content {
-  padding: 0 $edge-padding;
+%half {
+  width: span(2 of 2);
+
+  @include iPadWidth {
+    width: span(1 of 2);
+    float: left;
+  }
 }
 
-.is-centered-column {
-  max-width: $text-column-width;
-  margin-left: 0;
-  margin-right: 0;
+.block {
+  @extend %clearfix;
 }
 
-.has-centered-text {
+.is-white {
+  background-color: $white;
+}
+
+.is-navy {
+  @extend %has-dark-background;
+  background-color: $navy;
+}
+
+.site-header {
+  padding: $padding;
   text-align: center;
+  background-color: $white;
 }
 
 .site-name {
   font-weight: bold;
   color: $black;
+}
+
+.photo-of-family {
+  @extend %half;
+  background-image: url('/assets/images/IMG_6968.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.call-to-action {
+  @extend %half;
+  display: table;
+  padding: $padding;
+  background-color: $navy;
+
+  div {
+    display: table-cell;
+    vertical-align: middle;
+    @extend %centered-column;
+  }
+
+  @include iPadWidth {
+    min-height: 500px;
+  }
+}
+
+.column {
+  @extend %centered-column;
+  padding: $padding;
 }
