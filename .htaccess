@@ -6,11 +6,8 @@ RewriteRule ^(.*)$ $1.gz [L]
 Options +MultiViews
 
 Header append Vary: Accept-Encoding
-
 Header set X-XSS-Protection "1; mode=block"
-
 Header always set X-FRAME-OPTIONS "DENY"
-
 Header always set X-Content-Type-Options "nosniff"
 
 <filesMatch ".(css|js|jpg|jpeg|png|gif|ico|eot|svg|ttf|woff|woff2)$">

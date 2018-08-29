@@ -27,39 +27,38 @@ body {
 }
 
 $vertical-rhythm: 2rem;
-$text-padding: 2rem;
+$edge-padding: 2rem;
 $p-line-height: 1.5;
 $h1-line-height: 1.15;
+$text-column-width: 50rem;
 
 %text-column {
   max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 p {
-  @extend %text-column;
   font-family: $serif;
   margin: 0 0 $vertical-rhythm 0;
   line-height: $p-line-height;
+  max-width: $text-column-width;
 }
 
 h1, h2 {
-  @extend %text-column;
   margin: $vertical-rhythm 0;
   line-height: $h1-line-height;
   font-weight: 900;
+  max-width: $text-column-width;
 }
 
 h3, h4, h5, h6 {
-  @extend %text-column;
   margin: $vertical-rhythm 0 0 0;
   line-height: $p-line-height;
   font-weight: 900;
+  max-width: $text-column-width;
 }
 
 img {
-  @extend %text-column;
+  max-width: 100%;
 }
 
 a {
@@ -76,11 +75,36 @@ small {
 }
 
 .block {
-  display: flex;
-  width: span(12 of 12);
+  padding: $vertical-rhythm 0;
 }
 
-.text {
-  @extend %text-column;
-  padding: $text-padding;
+.has-dark-background {
+  color: $white;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+      color: lighten($blue, 10%);
+    }
+  }
+}
+
+.content {
+  padding: 0 $edge-padding;
+}
+
+.is-centered-column {
+  max-width: $text-column-width;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.has-centered-text {
+  text-align: center;
+}
+
+.site-name {
+  font-weight: bold;
+  color: $black;
 }
