@@ -85,11 +85,6 @@ small {
 %has-dark-background {
   color: $white;
 
-  p {
-    font-family: $sans-serif;
-    font-weight: 300;
-  }
-
   a {
     color: $white;
     text-decoration: underline;
@@ -105,6 +100,24 @@ small {
   @include iPadWidth {
     width: span(1 of 2);
     float: left;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  color: $white;
+  background-color: $blue;
+  font-family: $sans-serif;
+  font-weight: bold;
+  text-decoration: none !important;
+  border-radius: 0.25em;
+  margin-right: 0.3em;
+  @extend %shadow-3;
+
+  &:hover {
+    background-color: lighten($blue, 10%);
+    color: $white !important;
   }
 }
 
@@ -144,7 +157,6 @@ small {
   @extend %half;
   display: table;
   padding: $padding;
-  background-color: $navy;
 
   div {
     display: table-cell;
@@ -160,4 +172,19 @@ small {
 .column {
   @extend %centered-column;
   padding: $padding;
+}
+
+.is-pushed-down {
+  padding-top: 4 * $vertical-rhythm;
+}
+
+.greeting {
+  @extend .call-to-action;
+}
+
+.photo-of-shane {
+  @extend .photo-of-family;
+  float: right;
+  background-image: url('/assets/images/IMG_6827.jpg');
+  background-position: 60%;
 }
