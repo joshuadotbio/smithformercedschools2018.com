@@ -106,6 +106,7 @@ small {
 .button {
   display: inline-block;
   padding: 0.6em 1.2em;
+  margin-bottom: 0.3em;
   color: $white;
   background-color: $blue;
   font-family: $sans-serif;
@@ -118,6 +119,14 @@ small {
   &:hover {
     background-color: lighten($blue, 10%);
     color: $white !important;
+  }
+}
+
+.button-gray {
+  @extend .button;
+  background-color: $gray;
+  &:hover {
+    background-color: lighten($gray, 10%);
   }
 }
 
@@ -136,13 +145,43 @@ small {
 
 .site-header {
   padding: $padding;
-  text-align: center;
   background-color: $white;
+  @extend %clearfix;
+
+  @include iPhoneLandscapeWidth {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    float: right;
+
+    @include iPhoneLandscapeWidth {
+      display: inline-block;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 0.5em;
+    a {
+      color: $gray;
+      font-weight: 300;
+      &:hover {
+        color: lighten($blue, 10%);
+      }
+    }
+  }
 }
 
 .site-name {
   font-weight: bold;
   color: $black;
+  float: left;
 }
 
 .photo-of-family {
@@ -173,7 +212,7 @@ small {
   @extend %centered-column;
   padding: $padding;
 
-  @include iPadProWidth {
+  @include iPhoneLandscapeWidth {
     padding: 4rem;
   }
 }
