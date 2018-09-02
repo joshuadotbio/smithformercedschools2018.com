@@ -239,6 +239,12 @@ small {
   }
 }
 
+.is-justified {
+  p {
+    text-align: justify;
+  }
+}
+
 .is-pushed-down {
   padding-top: 4 * $vertical-rhythm;
 }
