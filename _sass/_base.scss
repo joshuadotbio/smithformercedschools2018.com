@@ -169,12 +169,26 @@ small {
   }
 }
 
-.column {
+.slug {
   @extend %centered-column;
   padding: $padding;
 
   @include iPadProWidth {
     padding: 4rem;
+  }
+}
+
+.column {
+  @extend .slug;
+
+  @include iPhoneWidth {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @include iPadProWidth {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
