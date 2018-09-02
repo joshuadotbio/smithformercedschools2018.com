@@ -194,7 +194,7 @@ small {
 
 .photo-of-family {
   @extend %half;
-  background-image: url('/assets/images/IMG_6968.jpg');
+  background-image: url('//shanesmith.b-cdn.net/assets/images/IMG_6968.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -256,6 +256,6 @@ small {
 .photo-of-shane {
   @extend .photo-of-family;
   float: right;
-  background-image: url('/assets/images/IMG_6827.jpg');
+  background-image: url('//shanesmith.b-cdn.net/assets/images/IMG_6827.jpg');
   background-position: 60%;
 }
