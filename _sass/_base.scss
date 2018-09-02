@@ -32,7 +32,7 @@ $edge-padding: 2rem;
 $padding: $vertical-rhythm $edge-padding;
 $p-line-height: 1.5;
 $h1-line-height: 1.15;
-$text-column-width: 45rem;
+$text-column-width: 56rem;
 
 %text-column {
   max-width: 50rem;
@@ -97,7 +97,7 @@ small {
 %half {
   width: span(2 of 2);
 
-  @include iPadWidth {
+  @include iPadProWidth {
     width: span(1 of 2);
     float: left;
   }
@@ -172,6 +172,10 @@ small {
 .column {
   @extend %centered-column;
   padding: $padding;
+
+  @include iPadProWidth {
+    padding: 4rem;
+  }
 }
 
 .is-pushed-down {
