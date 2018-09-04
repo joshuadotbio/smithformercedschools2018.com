@@ -263,7 +263,7 @@ small {
 .footer-text {
   font-weight: 900;
   text-align: center;
-  color: $gray;
+  @extend %has-dark-background;
 }
 
 .why-vote {
@@ -283,6 +283,10 @@ small {
   }
 }
 
+.logo {
+  max-width: 24rem;
+  border: 2px solid $white;
+}
 
 
 
