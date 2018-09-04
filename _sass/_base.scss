@@ -265,3 +265,25 @@ small {
   text-align: center;
   color: $gray;
 }
+
+.why-vote {
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 31, 63, 0.75),
+      rgba(0, 31, 63, 1.00) 65%
+    ),
+    url('/assets/images/IMG_6893.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+
+  @include iPadProWidth {
+    background-size: 100% auto;
+  }
+}
+
+
+
+
+
