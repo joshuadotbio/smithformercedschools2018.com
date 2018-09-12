@@ -1,12 +1,14 @@
 ---
-layout: page
+layout: page--park-events
 seo_title: Join School Board Candidate Shane Smith at Merced’s Parks
-title: Join School Board Candidate Shane Smith at Merced’s Parks
+title: Join School Board Candidate Shane&nbsp;Smith at Merced’s Parks
 ---
 
 ### Celebrate a new school year!
 
-Join Shane Smith as he kicks-off his campaign to serve on the Merced City School District Board of Education. Events are free and open to families of all ages!
+Join Shane Smith as he kicks-off his campaign to serve on the Merced City School District Board of Education.
+
+Events are free and open to families of all ages!
 
 ## Dates
 
