@@ -1,7 +1,7 @@
 ---
 layout: page
 seo_title: Join School Board Candidate Shane Smith at Merced’s Parks
-title: Join Shane Smith at Merced's Parks
+title: Join School Board Candidate Shane Smith at Merced’s Parks
 ---
 
 ## Dates
