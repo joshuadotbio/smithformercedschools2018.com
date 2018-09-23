@@ -3,7 +3,7 @@ layout: page
 title: Issues
 ---
 
-## School Board Candidate & Dad    Shane Smith stands for:
+# School Board Candidate & Dad    Shane Smith stands for:
 
 ### Inclusion.
 Shane will proactively ask for input from parents, teachers, and residents so that our School Board responds to community needs, not checkboxes on the agenda placed in front of them.
