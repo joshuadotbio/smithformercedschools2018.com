@@ -115,6 +115,8 @@ small {
   border-radius: 0.25em;
   margin-right: 0.3em;
   @extend %shadow-3;
+  border: 0;
+  cursor: pointer;
 
   &:hover {
     background-color: lighten($blue, 10%);
@@ -135,6 +137,14 @@ small {
   background-color: $olive;
   &:hover {
     background-color: lighten($olive, 10%);
+  }
+}
+
+.button-yellow {
+  @extend .button;
+  background-color: darken($yellow,10%);
+  &:hover {
+    background-color: darken($yellow, 5%);
   }
 }
 
